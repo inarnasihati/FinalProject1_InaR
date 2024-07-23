@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaspindar Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/Logo_nafazamove.png"
+                    style="width: 80px;margin-right: 420px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link m-2" href="./portofolio.html">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link m-2" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link m-2" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="./todos.html" onclink>To Do</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <h1>NafazaMove</h1>
+                <p>Solusi terpercaya untuk pindahan anda</p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TableModal">Booking Now!</button>
+              </div>
+                <img src="./images/pindahan1.jpg" class="d-block w-100" alt="...">
+               
+            </div>
+            <div class="carousel-item">
+                <img src="./images/pindahan2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beragam Produk yang kami tawarkan</h5>
+                    <p>Jasa layanan pindahan rumah, pindahan kantor, pindahan luar kota</p>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TableModal">Booking Now!</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/pindahan3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Selain itu, terdapat layanan yang lain yaitu sewa armada</h5>
+                    <p>Sewa Mobil Box dan Sewa Truk</p>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TableModal">Booking Now!</button>
+                </div>
+            </div>
+               <!-- Modal -->
+      <div class="modal fade" id="TableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="border:none">
+                <h5 class="modal-title" id="exampleModalLabel">Daftar Harga</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tipe Layanan</th>
+                    <th scope="col">Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Paket Pindahan Rumah</td>
+                    <td>Rp. 1.000.000,-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Paket Pindahan Kantor</td>
+                    <td>Rp. 2.000.000,-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Paket Pindahan ke Luar Kota</td>
+                    <td>Rp. 4.000.000,-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+     
+    </div>
+
+    <!--Home-->
+    <div id="home" class="container">
+        <div class="row justify-content-center p-5">
+            <div class="col-4">
+                <img src="./images/gbr1.jpeg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-6">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Selamat Datang di NafazaMove - Solusi Pindahan Online Terpercaya</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Pindah Tanpa Stres, Kami Urus Semua!
+                    </figcaption>
+                </figure>
+                <p class="text-justify"><strong>NafazaMove Online</strong> hadir untuk membantu Anda dalam proses
+                    pindahan rumah, kantor, atau apartemen dengan cara yang paling mudah dan efisien. Dengan layanan
+                    kami yang profesional dan terpercaya, pindahan Anda akan menjadi lebih nyaman tanpa repot. Kami
+                    memahami bahwa pindahan bisa menjadi tugas yang menakutkan dan menghabiskan waktu, oleh karena itu
+                    kami menawarkan solusi menyeluruh untuk memenuhi semua kebutuhan pindahan Anda.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <p class="h2 text-center">Layanan Terbaik yang Kami Miliki</p>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-4 p-2">
+                <div class="card border-0" style="width: 25rem;">
+                    <img src="./images/luarkota.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body text-center">
+                        <p class="h4">Pindahan Kantor</p>
+                        <p class="text-center">NafazaMove siap melayani perpindahan kantor dengan dukungan tim yang
+                          handal dan terpercaya.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-2">
+                <div class="card border-0" style="height: 20rem;">
+                    <img src="./images/rumah.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body text-center">
+                        <p class="h4">Pindahan Rumah</p>
+                        <p class="text-center">Melayani jasa pindahan rumah, aparternen, didukung dengan tim yang
+                            berpengalaman dan profesional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-2">
+                <div class="card border-0" style="width: 25rem;">
+                    <img src="./images/luarkota.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body text-center">
+                        <p class="h4">Pindahan Luar Kota</p>
+                        <p class="text-center">NafazaMove membantu pengiriman barang pindahan anda ke seluruh kota di
+                            Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Us-->
+    <div id="contact_us" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center">Lokasi Kami</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkf1J8apCkXMmzj8j2F9fQYZfLaC0ofks&callback=initMap" async defer></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of the place
+            const location = { lat: -6.200000, lng: 106.816666 }; // Contoh lokasi Jakarta
+            // The map, centered at the location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location,
+            });
+            // The marker, positioned at the location
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <div class="container-fluid bg-secondary p-5">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <p class="h6 text-light">Kontak</p>
+                <p class="text-light mb-0">(0761) 87xxxxxx - Kantor</p>
+                <p class="text-light mb-0">(+62) 87xxxxxx - Admin 1</p>
+                <p class="text-light mb-0">(+62) 87xxxxxx - Admin 2</p>
+            </div>
+
+            <div class="col-3">
+                <p class="h6 text-light">Alamat</p>
+                <p class="text-light">Jl. Jend. Sudirman No.199, Sumahilang, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28155</p>
+            </div>
+
+            <div class="col-3">
+                <p class="h6 text-light">Jam Buka</p>
+                <p class="text-light mb-0">Senin - Sabtu</p>
+                <p class="text-light">08:00 - 17:00</p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white small">Copyright &copy; NafazaMove 2024</p>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

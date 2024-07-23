@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect /home to /index.html
+RewriteRule ^home$ /index.html [L]
+
+# Redirect /about to /about.html
+RewriteRule ^about$ /about.html [L]
+
+# Redirect /portofolio to /portofolio.html
+RewriteRule ^portofolio$ /portofolio.html [L]
